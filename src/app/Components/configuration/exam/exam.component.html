@@ -1,0 +1,54 @@
+<h4>Exam Configuration</h4>
+
+<div class="container-fluid">
+    <div class="row d-flex">
+        <div class="col-12">
+            <div class="input-group">
+                <h6 class="mb-0 col-1"> <label for="radio">Select Exam Type: <span class="text-danger">*</span></label></h6>
+                <nz-radio-group [(ngModel)]="stp" (ngModelChange)="radioGroupChange(stp)" class="col-11">
+                    <label nz-radio nzValue="A">All Exam</label>
+                    <label nz-radio nzValue="S">Specific Exam</label>
+                </nz-radio-group>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 pb-0">
+            <div class="input-group">
+                <h6 class="mr-5"> Select Exam <span class="text-danger">*</span></h6>
+                <p-multiSelect [options]="listofExam" [(ngModel)]="selectedExamsList" [showToggleAll]="false"
+                    placeholder="Select Exams" [disabled]="!stp" optionLabel="name" display="chip" [showClear]="true"
+                    [filter]="true" (onChange)="onSelectAllCondition($event)" />
+            </div>
+        </div>
+    </div>
+    <div class="row d-flex align-items-center">
+        <div class="col-6 pt-0">
+            <div class="input-group">
+                <p-checkbox class="mr-3" [(ngModel)]="sel" value="New York" inputId="ny" />
+                <label for="ny">Selectable <span class="text-danger">*</span></label>
+            </div>
+        </div>
+        <div class="col-6 pt-0">
+            <div class="input-group">
+                <label for="maxExm" class="mr-3">Maximum Exam : <span class="text-danger">*</span></label>
+                <p-inputNumber inputId="integeronly" [(ngModel)]="maxExam" [max]="maxExam" [disabled]="selectedExamsList.length == 0" (ngModelChange)="maximumExamLength(maxExam)"/>
+            </div>
+        </div>
+    </div>
+    <div class="row ">
+        @for(item of items;track item.id; let index = $index){
+        <div class="col-12 pb-0">
+            <div class="input-group">
+                <label class="4" for="exam">E{{index+1}}</label>
+                <nz-select nzShowSearch nzAllowClear nzPlaceHolder="Select a person" [(ngModel)]="selectedValue[index]"
+                    [nzSize]="'large'" (nzOpenChange)="eachExamSelection(selectedValue,index)" class="col-6">
+                    @for (data of selectedExamsList; track $index) {
+                    <nz-option class="form-control" [nzLabel]="data.name" [nzValue]="data.id"></nz-option>
+                    }
+                </nz-select>
+            </div>
+        </div>
+        }
+    </div>
+</div>

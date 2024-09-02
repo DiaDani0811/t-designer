@@ -1,0 +1,51 @@
+.input-group{
+    align-items: center;
+    padding: 5px;
+}
+.row {
+    margin: 10px 0;
+}
+
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+    margin-right: 15px;
+    min-width: 50px; /* Ensures labels have consistent width */
+}
+
+.col-6 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nz-select {
+    width: 100%; /* Full width for select box */
+}
+
+.nz-option {
+    font-size: 14px;
+    padding: 5px 10px; /* Padding inside the select options */
+}
+
+.form-control {
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    padding: 8px;
+}
+
+@media (max-width: 768px) {
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .col-6 {
+        width: 100%; /* Make the select box full width on smaller screens */
+    }
+
+    label {
+        margin-bottom: 5px;
+    }
+}

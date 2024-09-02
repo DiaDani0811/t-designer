@@ -1,0 +1,65 @@
+<nz-header class="mb-0">
+  <div class="header">
+    <div class="school-name ml-3">School Name</div>
+    <button type="button" class="btn btn-primary mr-3">Publish</button>
+  </div>
+</nz-header>
+
+<nz-layout style="height: 89vh;">
+  <nz-sider nzCollapsible [(nzCollapsed)]="isCollapsed" [nzTrigger]="null" nzTheme="light" class="custom-sider">
+    <div class="trigger">
+      <span class="trigger" nz-icon [nzType]="isCollapsed ? 'menu' : 'close'"
+        (click)="isCollapsed = !isCollapsed"></span>
+    </div>
+
+    <ul nz-menu nzTheme="light" nzMode="inline">
+      <li nz-menu-item class="menu">
+        <span nz-icon nzType="info-circle"></span>
+        <span><a routerLink='/templateinfo'>Template Info</a></span>
+      </li>
+
+      <li nz-submenu nzTitle="Configuration" nzIcon="setting">
+        <ul nz-menu>
+          @for(obj of configMenu;track obj){
+          <li nz-menu-item class="menu">
+            <span>
+              <a [routerLink]="'config/'+obj.name">{{obj.name}}</a>
+            </span>
+          </li>
+          }
+        </ul>
+      </li>
+
+      <li nz-submenu nzTitle="Document" nzIcon="file">
+        <ul>
+          <li nz-menu-item class="menu">
+            <span>Properties</span>
+          </li>
+          <li nz-menu-item class="menu">
+            <span>Header</span>
+          </li>
+          <li nz-menu-item class="menu">
+            <span>Footer</span>
+          </li>
+          <li nz-submenu nzTitle="Page" nzIcon="file-add">
+            <ul nz-menu>
+              @for(item of pagesMenu;track item){
+              <li nz-menu-item class="menu" [routerLink]="item.pgn">{{item.pgn}}</li>
+              }
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+
+  <nz-content>
+    <nz-card style="height: 87vh; overflow-y: auto;" [nzLoading]="cardLoading">
+      <router-outlet></router-outlet>
+    </nz-card>
+  </nz-content>
+</nz-layout>
+
+<nz-footer>
+  <span>hhhhhhhhhhhh</span>
+</nz-footer>

@@ -1,0 +1,1617 @@
+{
+    "sample": {
+        "thdat": "",
+        "tconf": {
+            "CLS": {
+                "STP": "A",
+                "SRC": [
+                    1,
+                    2,
+                    3,
+                    4
+                ],
+                "MAL": 3,
+                "SEL": "N",
+                "MAP": {
+                    "mid": [
+                        "A1",
+                        "A2",
+                        "A3"
+                    ],
+                    "rid": {
+                        "A1": "4"
+                    },
+                    "nam": {
+                        "A1": "I",
+                        "A2": "IV",
+                        "A3": "V"
+                    }
+                }
+            },
+            "EXM": {
+                "STP": "A",
+                "SRC": [
+                    17,
+                    22,
+                    23,
+                    33,
+                    45,
+                    67
+                ],
+                "MAL": 3,
+                "SEL": "N",
+                "MAP": {
+                    "mid": [
+                        "E1",
+                        "E2",
+                        "E3"
+                    ],
+                    "rid": {
+                        "E1": "10",
+                        "E2": "12",
+                        "E3": "15"
+                    },
+                    "nam": {
+                        "E1": "FA",
+                        "E2": "SA",
+                        "E3": "TERM1"
+                    }
+                }
+            },
+            "SUB": {
+                "STP": "A",
+                "SRC": [
+                    17,
+                    22,
+                    23,
+                    3,
+                    44,
+                    67
+                ],
+                "MAL": 5,
+                "SEL": "N",
+                "MAP": {
+                    "mid": [
+                        "S1",
+                        "S2",
+                        "S3"
+                    ],
+                    "rid": {
+                        "S1": "23",
+                        "S2": "3",
+                        "S3": "44"
+                    },
+                    "nam": {
+                        "S1": "ENGLISH",
+                        "S2": "HINDI",
+                        "S3": "MATHS"
+                    }
+                }
+            },
+            "REG": {
+                "STP": "A",
+                "SRC": [
+                    17,
+                    22,
+                    23,
+                    3,
+                    44,
+                    67
+                ],
+                "MAL": 3,
+                "SEL": "N",
+                "MAP": {
+                    "mid": [
+                        "R1",
+                        "R2",
+                        "R3"
+                    ],
+                    "rid": {
+                        "R1": "23",
+                        "R2": "3",
+                        "R3": "44"
+                    },
+                    "nam": {
+                        "R1": "I TERM REGISTER",
+                        "R2": "II TERM REGISTER",
+                        "R3": "III TERM REGISTER"
+                    }
+                }
+            },
+            "CCL": {
+                "MAP": {
+                    "mid": [
+                        "C1",
+                        "C2",
+                        "C3"
+                    ],
+                    "nam": {
+                        "C1": "CONV 20",
+                        "C2": "CONV 10",
+                        "C3": "TOTAL"
+                    },
+                    "str": {
+                        "C1": {
+                            "for": [
+                                "SUM",
+                                "COV"
+                            ],
+                            "RND": 0,
+                            "MXV": "50",
+                            "FSR": [
+                                "E1",
+                                "E2",
+                                "E3",
+                                "E4"
+                            ],
+                            "SMX": "E",
+                            "RUL": {
+                                "E1": {
+                                    "ML": "E",
+                                    "AB": "R|-",
+                                    "OD": "0"
+                                },
+                                "E2": {
+                                    "ML": "E",
+                                    "AB": "R|-",
+                                    "OD": "0"
+                                }
+                            }
+                        },
+                        "C2": {
+                            "for": [
+                                "SUM",
+                                "COV"
+                            ],
+                            "RND": 0,
+                            "MXV": "50",
+                            "FSR": [
+                                "C1"
+                            ],
+                            "SMX": "E",
+                            "RUL": {
+                                "C1": {
+                                    "ML": "E",
+                                    "AB": "R|-",
+                                    "OD": "0"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "tstuc": {
+            "doc": {
+                "author": "DELHI PUBLIC SCHOOL, GREATER NOIDA",
+                "title": "ACADEMIC ASSESMENT TERM-II",
+                "creator": "NEVERSKIP",
+                "subject": "ACADEMIC ASSESMENT TERM-II",
+                "keyword": "",
+                "authkey": "",
+                "outputformat": "P"
+            },
+            "layout": {
+                "bdr": "N",
+                "mgn": "A,6",
+                "ptp": "L",
+                "siz": "A4",
+                "wid": "",
+                "hgt": "",
+                "fds": "Times,10,R,#000000"
+            },
+            "header": {
+                "rep": "Y",
+                "olt": [
+                    "TX1",
+                    "TX2",
+                    "TX4",
+                    "TX5",
+                    "TX6",
+                    "TX7",
+                    "TX8",
+                    "TX9"
+                ]
+            },
+            "footer": {
+                "rep": "Y",
+                "olt": [
+                    "TX10",
+                    "TX2",
+                    "TX3"
+                ]
+            },
+            "body": {
+                "pg1": {
+                    "pid": "pg1",
+                    "pgn": "page 1",
+                    "pgs": "A",
+                    "bdr": "N",
+                    "mgn": "N",
+                    "ivl": "",
+                    "bop": "0",
+                    "pox": "",
+                    "poy": "",
+                    "biw": "",
+                    "bih": "",
+                    "olt": [
+                        "TX1",
+                        "IM1",
+                        "TB1"
+                    ]
+                }
+            }
+        },
+        "tobjs": {
+            "TX1": {
+                "btp": "TX",
+                "blb": "School Name",
+                "bst": "A",
+                "sty": {
+                    "bln": {
+                        "S": "S ",
+                        "V": "A"
+                    },
+                    "ttp": {
+                        "S": "S",
+                        "V": "N"
+                    },
+                    "pos": {
+                        "S": "S",
+                        "V": "30,10"
+                    },
+                    "bwh": {
+                        "S": "S",
+                        "V": "250 ,10 "
+                    },
+                    "bdr": {
+                        "S": "S",
+                        "V": "N,0.2"
+                    },
+                    "brt": {
+                        "S": "S",
+                        "V": "N"
+                    },
+                    "pdg": {
+                        "S": "S",
+                        "V": "A ,5,5 only for excle "
+                    },
+                    "bgr": {
+                        "S": "S",
+                        "V": "N"
+                    }
+                },
+                "val": {
+                    "S": "S",
+                    "R": "ST",
+                    "V": "DELHI PUBLIC SCHOOL, GREATER NOIDA"
+                },
+                "mgn": "N"
+            },
+            "IM1": {
+                "btp": "IM",
+                "blb": "School Name",
+                "bst": "A",
+                "sty": {
+                    "pos": {
+                        "S": "S",
+                        "V": "10,10"
+                    },
+                    "bwh": {
+                        "S": "S",
+                        "V": "20 ,20 "
+                    }
+                },
+                "val": {
+                    "S": "S",
+                    "R": "ST",
+                    "V": "https://images.unsplash.com/photo-1533450718592-29d45635f0a9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anBnfGVufDB8fDB8fHww"
+                }
+            },
+            "TB1": {
+                "btp": "TB",
+                "blb": "Table 1",
+                "sty": {
+                    "lmr": {
+                        "S": "S",
+                        "V": "A, 5"
+                    },
+                    "pos": {
+                        "S": "S",
+                        "V": "5,35"
+                    },
+                    "bwh": {
+                        "S": "S",
+                        "V": "N"
+                    },
+                    "bdr": {
+                        "S": "S",
+                        "V": "1,#000000,0.5"
+                    },
+                    "cwm": {
+                        "S": "S",
+                        "V": "M"
+                    },
+                    "aln": {
+                        "S": "S",
+                        "V": "C,M"
+                    },
+                    "bgr": {
+                        "S": "S",
+                        "V": "#FFFFFF"
+                    },
+                    "pdg": {
+                        "S": "S",
+                        "V": "N"
+                    }
+                },
+                "val": {
+                    "S": "N"
+                },
+                "row": {
+                    "R1": {
+                        "rid": "R1",
+                        "rty": "H",
+                        "sty": {
+                            "aln": {
+                                "S": "S",
+                                "V": "C,M"
+                            },
+                            "bgr": {
+                                "S": "S",
+                                "V": "#FFFFFF"
+                            },
+                            "bdr": {
+                                "S": "S",
+                                "V": "1,#000000,0.5"
+                            }
+                        },
+                        "val": {
+                            "S": "N"
+                        },
+                        "col": {
+                            "C1": {
+                                "cid": "C1",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "",
+                                    "M": "https://images.unsplash.com/photo-1533450718592-29d45635f0a9?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8anBnfGVufDB8fDB8fHww"
+                                },
+                                "img": "N"
+                            },
+                            "C2": {
+                                "cid": "C2",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "V": "Admn.No",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C3": {
+                                "cid": "C2",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "V": "Name of Student",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C4": {
+                                "cid": "C4",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "V": "ASSGN GRADE TERM 1",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C5": {
+                                "cid": "C5",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "V": "ASSGN GRADE TERM 2",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C6": {
+                                "cid": "C6",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "4"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "V": "WEEKLY TEST",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C7": {
+                                "cid": "C6",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "3"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "V": "1st COMPREHENSIVE TERM",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C8": {
+                                "cid": "C8",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "5"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "V": "2nd COMPREHENSIVE TERM",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C9": {
+                                "cid": "C9",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "8"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "V": "FINAL REPORT",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            }
+                        }
+                    },
+                    "R2": {
+                        "rid": "R3",
+                        "rty": "H",
+                        "sty": {
+                            "aln": {
+                                "S": "S",
+                                "V": "C,M"
+                            },
+                            "bgr": {
+                                "S": "S",
+                                "V": "#FFFFFF"
+                            },
+                            "hgt": {
+                                "S": "S",
+                                "V": "1"
+                            }
+                        },
+                        "val": {
+                            "S": "N"
+                        },
+                        "col": {
+                            "C1": {
+                                "cid": "C1",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C2": {
+                                "cid": "C2",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "V": "",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C3": {
+                                "cid": "C2",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "V": "",
+                                    "R": "ST"
+                                },
+                                "img": "N"
+                            },
+                            "C4": {
+                                "cid": "C4",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C5": {
+                                "cid": "C5",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C6": {
+                                "cid": "C6",
+                                "sty": {
+                                    "fds": {
+                                        "S": "S",
+                                        "V": "Times,6,B,#000000"
+                                    }
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "WT-1"
+                                },
+                                "img": "N"
+                            },
+                            "C7": {
+                                "cid": "C7",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "WT-2"
+                                },
+                                "img": "N"
+                            },
+                            "C8": {
+                                "cid": "C8",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "WT-3"
+                                },
+                                "img": "N"
+                            },
+                            "C9": {
+                                "cid": "C9",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "TOTAL (50)"
+                                },
+                                "img": "N"
+                            },
+                            "C10": {
+                                "cid": "C10",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "TH"
+                                },
+                                "img": "N"
+                            },
+                            "C11": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "PR"
+                                },
+                                "img": "N"
+                            },
+                            "C12": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "TOTAL(100)"
+                                },
+                                "img": "N"
+                            },
+                            "C13": {
+                                "cid": "C10",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "TH"
+                                },
+                                "img": "N"
+                            },
+                            "C14": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "PR"
+                                },
+                                "img": "N"
+                            },
+                            "C15": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "TOTAL(100)"
+                                },
+                                "img": "N"
+                            },
+                            "C16": {
+                                "cid": "C10",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "2"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "SUB ATTN"
+                                },
+                                "img": "N"
+                            },
+                            "C17": {
+                                "cid": "C11",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "2"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "THEORY"
+                                },
+                                "img": "N"
+                            },
+                            "C18": {
+                                "cid": "C11",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "2"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "PRACTICAL"
+                                },
+                                "img": "N"
+                            },
+                            "C19": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "TOTAL(250)"
+                                },
+                                "img": "N"
+                            },
+                            "C20": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "%"
+                                },
+                                "img": "N"
+                            },
+                            "C21": {
+                                "cid": "C11",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "2"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "SUB ATTN TOTAL"
+                                },
+                                "img": "N"
+                            }
+                        }
+                    },
+                    "R3": {
+                        "rid": "R4",
+                        "rty": "H",
+                        "sty": {
+                            "aln": {
+                                "S": "S",
+                                "V": "C,M"
+                            },
+                            "bgr": {
+                                "S": "S",
+                                "V": "#FFFFFF"
+                            },
+                            "hgt": {
+                                "S": "S",
+                                "V": "1"
+                            }
+                        },
+                        "bdr": {
+                            "S": "S",
+                            "V": "1,#000000,0.5"
+                        },
+                        "col": {
+                            "C1": {
+                                "cid": "C1",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C2": {
+                                "cid": "C2",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C3": {
+                                "cid": "C3",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C4": {
+                                "cid": "C4",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C5": {
+                                "cid": "C5",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C6": {
+                                "cid": "C6",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C7": {
+                                "cid": "C7",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C8": {
+                                "cid": "C8",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C9": {
+                                "cid": "C9",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "A"
+                                },
+                                "img": "N"
+                            },
+                            "C10": {
+                                "cid": "C10",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "B"
+                                },
+                                "img": "N"
+                            },
+                            "C11": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "C"
+                                },
+                                "img": "N"
+                            },
+                            "C12": {
+                                "cid": "C12",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "D"
+                                },
+                                "img": "N"
+                            },
+                            "C13": {
+                                "cid": "C13",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "E"
+                                },
+                                "img": "N"
+                            },
+                            "C14": {
+                                "cid": "C14",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "F"
+                                },
+                                "img": "N"
+                            },
+                            "C15": {
+                                "cid": "C15",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "G"
+                                },
+                                "img": "N"
+                            },
+                            "C16": {
+                                "cid": "C16",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "2"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "H"
+                                },
+                                "img": "N"
+                            },
+                            "C17": {
+                                "cid": "C17",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "A+B+E"
+                                },
+                                "img": "N"
+                            },
+                            "C18": {
+                                "cid": "C18",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "%"
+                                },
+                                "img": "N"
+                            },
+                            "C19": {
+                                "cid": "C19",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "C+F"
+                                },
+                                "img": "N"
+                            },
+                            "C20": {
+                                "cid": "C20",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "%"
+                                },
+                                "img": "N"
+                            },
+                            "C21": {
+                                "cid": "C21",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": "A+D+G"
+                                },
+                                "img": "N"
+                            },
+                            "C22": {
+                                "cid": "C22",
+                                "sty": {},
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            },
+                            "C23": {
+                                "cid": "C23",
+                                "sty": {},
+                                "csp": {
+                                    "S": "S",
+                                    "V": "2"
+                                },
+                                "val": {
+                                    "S": "S",
+                                    "R": "ST",
+                                    "V": ""
+                                },
+                                "img": "N"
+                            }
+                        }
+                    },
+                    "R4": {
+                        "rid": "R4",
+                        "sty": {
+                            "aln": {
+                                "S": "S",
+                                "V": "C,M"
+                            },
+                            "bgr": {
+                                "S": "S",
+                                "V": "#FFFFFF"
+                            },
+                            "hgt": {
+                                "S": "S",
+                                "V": "1"
+                            },
+                            "bdr": {
+                                "S": "S",
+                                "V": "1,#000000,0.5"
+                            }
+                        },
+                        "rty": "D",
+                        "val": {
+                            "S": "D",
+                            "T": "arr",
+                            "K": "stu_rid",
+                            "R": "KI",
+                            "I": {
+                                "T": "SB",
+                                "R": "SD"
+                            }
+                        },
+                        "rps": {
+                            "S": "S",
+                            "V": 20
+                        },
+                        "col": {
+                            "C1": {
+                                "cid": "C1",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "stu",
+                                    "K": "stu_rol",
+                                    "R": "RI",
+                                    "I": {
+                                        "R": "SD"
+                                    },
+                                    "P": {
+                                        "SD": "A"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C2": {
+                                "cid": "C2",
+                                "sty": {
+                                    "wid": {
+                                        "S": "S",
+                                        "V": "35"
+                                    }
+                                },
+                                "val": {
+                                    "S": "D",
+                                    "T": "stu",
+                                    "K": "stu_adm",
+                                    "R": "RI",
+                                    "I": {
+                                        "R": "SD"
+                                    },
+                                    "P": {
+                                        "SD": "A"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C3": {
+                                "cid": "C3",
+                                "sty": {
+                                    "wid": {
+                                        "S": "S",
+                                        "V": "35"
+                                    }
+                                },
+                                "val": {
+                                    "S": "D",
+                                    "T": "stu",
+                                    "K": "stu_nam",
+                                    "R": "RI",
+                                    "I": {
+                                        "R": "SD"
+                                    },
+                                    "P": {
+                                        "SD": "A"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C4": {
+                                "cid": "C4",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cgrd",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            10
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C5": {
+                                "cid": "C5",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cgrd",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            114
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C6": {
+                                "cid": "C6",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            11
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C7": {
+                                "cid": "C7",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            15
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C8": {
+                                "cid": "C8",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            19
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C9": {
+                                "cid": "C9",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            35
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C10": {
+                                "cid": "C10",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            43
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C11": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            44
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C12": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            65
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C13": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            112
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C14": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            113
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C15": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            122
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C16": {
+                                "cid": "C11",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "att",
+                                    "K": "att_csct",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            115
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C17": {
+                                "cid": "C17",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "att",
+                                    "K": "att_csct",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            115
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C18": {
+                                "cid": "C18",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "R": "TR",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            139
+                                        ]
+                                    },
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C19": {
+                                "cid": "C19",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cper",
+                                    "R": "TR",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            139
+                                        ]
+                                    },
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C20": {
+                                "cid": "C20",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "R": "TR",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            140
+                                        ]
+                                    },
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C21": {
+                                "cid": "C21",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cper",
+                                    "R": "TR",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            140
+                                        ]
+                                    },
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C22": {
+                                "cid": "C22",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cmrk",
+                                    "R": "TR",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            141
+                                        ]
+                                    },
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C23": {
+                                "cid": "C23",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "ess",
+                                    "K": "ess_cper",
+                                    "R": "TR",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            141
+                                        ]
+                                    },
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C24": {
+                                "cid": "C23",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "att",
+                                    "K": "att_csct",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            160
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            },
+                            "C25": {
+                                "cid": "C23",
+                                "sty": {},
+                                "val": {
+                                    "S": "D",
+                                    "T": "att",
+                                    "K": "att_csct",
+                                    "P": {
+                                        "SD": "A",
+                                        "SB": "A",
+                                        "EX": [
+                                            160
+                                        ]
+                                    },
+                                    "R": "TR",
+                                    "I": {
+                                        "T": "SB",
+                                        "R": "SD"
+                                    }
+                                },
+                                "img": "N"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "submenu": [
+        {
+            "cls": {
+                "2": "I",
+                "3": "II",
+                "4": "III",
+                "5": "IV",
+                "6": "V"
+            },
+            "cas": {
+                "2_1": "I-A",
+                "3_1": "II-B",
+                "4_C": "III-C",
+                "5_1": "IV-A",
+                "6_1": "V-A"
+            },
+            "sub": {
+                "2": "English",
+                "3": "Maths",
+                "4": "Social",
+                "5": "IV-A",
+                "6": "Hindi"
+            },
+            "exm": {
+                "1": "FA",
+                "3": "SA",
+                "5": "TERM",
+                "6": "Annual",
+                "7": "TEST"
+            }
+        }
+    ]
+}
