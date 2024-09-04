@@ -34,6 +34,7 @@ export class LayoutComponent {
   getApi() : void {
     this.userservice.getJson().subscribe({
       next: (resp) => {
+        this.userservice.updateCurrentJson(resp)
         let data = resp
         let pgky = Object.keys(data.tstuc.body)
         let config = Object.keys(data.tconf)

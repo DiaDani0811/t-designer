@@ -73,11 +73,11 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { IconDefinition } from '@ant-design/icons-angular';
 import { provideHttpClient, withJsonpSupport } from '@angular/common/http';
-import { ContainerOutline, FileAddOutline, SettingOutline } from '@ant-design/icons-angular/icons';
+import { ContainerOutline, EditOutline, FileAddOutline, SettingOutline } from '@ant-design/icons-angular/icons';
 
 registerLocaleData(en);
 
-const icons: IconDefinition[] = [SettingOutline, ContainerOutline, FileAddOutline]
+const icons: IconDefinition[] = [SettingOutline, ContainerOutline, FileAddOutline, EditOutline]
 
 @NgModule({
   imports : [

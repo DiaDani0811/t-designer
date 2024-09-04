@@ -12,11 +12,15 @@ export class UserService {
   private currJsonsubject = new BehaviorSubject([]);
   public currJson = this.currJsonsubject.asObservable();
   getJson(){
-    return this.apiservice.get('http://localhost:8000/sample')
+    return this.apiservice.get('http://localhost:8000/mainJson')
   }
 
   getConfigData(){
-    return this.apiservice.get("http://localhost:8000/submenu")
+    return this.apiservice.get("http://localhost:8000/mainData")
+  }
+
+  postMainJson(payload){
+    return this.apiservice.post('http://localhost:8000/mainJson',payload)
   }
 
   updateCurrentJson(value){

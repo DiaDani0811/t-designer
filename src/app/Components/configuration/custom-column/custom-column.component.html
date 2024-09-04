@@ -1,1 +1,99 @@
-<p>custom-column works!</p>
+<div class="row d-flex">
+    <div style="padding: 15px;display: flex;justify-content: space-between;">
+        <span>
+            <h5>Custom Column</h5>
+        </span>
+        <i class="fa-solid fa-plus box" (click)="OpenModal(content)"></i>
+    </div>
+</div>
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Column Name</th>
+                <th scope="col">Formula</th>
+                <th scope="col">Rows</th>
+                <th scope="col">Source</th>
+                <th scope="col">Maximum Value</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of tableData; track $index; let index = $index) {
+            <tr>
+                <th scope="row">{{index +1}}</th>
+                <td>{{item.columnName}}</td>
+                <td>{{item.formula.join(",")}}</td>
+                <td>{{item.round}}</td>
+                <td>{{item.source.join(",")}}</td>
+                <td>{{item.maximumValue}}</td>
+                <td>
+                    <i class="pi pi-pen-to-square" (click)="editRow(item,content)"></i>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+
+
+<ng-template #content>
+    <div class="modal-header">
+        <h4 class="modal-title">Add Column</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modaref.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+        @if (isDropdown) {
+        <div class="form-container">
+            <form #addCustomColumn="ngForm" (ngSubmit)="onSubmit(addCustomColumn)" novalidate>
+                <!-- Column Name Input -->
+                <div class="form-group">
+                    <label for="name">Column Name:</label>
+                    <input id="name" [(ngModel)]="columnName" name="colname" type="text" class="form-control" />
+                </div>
+        
+                <!-- Formula MultiSelect Dropdown -->
+                <div class="form-group">
+                    <label for="formula">Formula:</label>
+                    <ng-multiselect-dropdown name="frmla" [placeholder]="'custom placeholder'"
+                        [settings]="formulaDropdownSetting" [data]="formularArr" [(ngModel)]="formula"
+                        (onSelect)="onSelectFormula($event)" (onSelectAll)="onSelectAllFormula($event)">
+                    </ng-multiselect-dropdown>
+                </div>
+        
+                <!-- Round Type MultiSelect Dropdown -->
+                <div class="form-group">
+                    <label for="roundType">Round Type:</label>
+                    <select id="roundType" [(ngModel)]="roundType" name="roundType" class="form-control">
+                      <option *ngFor="let type of roundTypeArr" [value]="type">{{ type }}</option>
+                    </select>
+                  </div>
+                
+        
+                <!-- Source MultiSelect Dropdown -->
+                <div class="form-group">
+                    <label for="source">Source:</label>
+                    <ng-multiselect-dropdown name="src" [placeholder]="'custom placeholder'" [settings]="sourceDropdownSetting"
+                        [data]="sourceArr" [(ngModel)]="source" (onSelect)="onSelectSource($event)"
+                        (onSelectAll)="onSelectAllSource($event)">
+                    </ng-multiselect-dropdown>
+                </div>
+        
+                <!-- Max Input -->
+                <div class="form-group">
+                    <label for="max">Max:</label>
+                    <input id="max" [(ngModel)]="max" name="max" type="text" class="form-control" />
+                </div>
+        
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        
+        </div>
+        }
+    </div>
+    <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" (click)="modaref.close('Close click')">Close</button>
+    </div> -->
+</ng-template>

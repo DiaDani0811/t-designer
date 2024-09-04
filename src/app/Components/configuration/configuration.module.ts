@@ -9,6 +9,7 @@ import { RegisterModule } from './register/register.module';
 import { SubjectModule } from './subject/subject.module';
 import { RouterModule, Routes } from '@angular/router';
 import { ClassComponent } from './class/class.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const routes : Routes = [
   { path: '', component: ConfigurationComponent,
@@ -35,7 +36,9 @@ const routes : Routes = [
     ExamModule,
     RegisterModule,
     SubjectModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class ConfigurationModule { }
